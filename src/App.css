@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern and readable font */
+  background-color: #fafafa; /* Soft, neutral background */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333; /* Text color for readability */
+}
+
+/* Main Header */
+h1 {
+  text-align: center;
+  color: #003a6d; /* Deep blue header */
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700; /* Stronger header */
+}
+
+/* Container for Search Bar */
+.search-bar {
+  background-color: #fff; /* White background for the box */
+  padding: 25px 30px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  width: 450px; /* Fixed width */
+  text-align: center;
+  border: 1px solid #ccc; /* Light border for the box */
+}
+
+input {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc; /* Border for the input */
+  border-radius: 8px;
+  width: 70%;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #003a6d; /* Focus border color */
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #003a6d; /* Button background */
+  color: white;
+  border-radius: 8px;
+  border: none;
+  margin-left: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #005f9e; /* Lighter blue on hover */
+}
+
+/* Error Message */
+.error {
+  color: #d9534f; /* Red for error */
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Container for Definition Section */
+.definition {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 450px; /* Fixed width */
+  text-align: left;
+  border: 1px solid #ccc; /* Light border around the definition box */
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #003a6d; /* Bold header color */
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555; /* Soft gray text */
+  margin-bottom: 10px;
+}
+
+/* Responsive Layout for Small Screens (Mobile-friendly) */
+@media (max-width: 768px) {
+  .search-bar,
+  .definition {
+    width: 90%; /* Make boxes full-width for smaller screens */
+    padding: 25px;
+  }
+
+  input {
+    width: 60%; /* Narrower input field */
+  }
+
+  button {
+    width: 30%; /* Narrower button for small screens */
+  }
+}
